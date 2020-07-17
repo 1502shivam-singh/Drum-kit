@@ -2,12 +2,13 @@
 
 for(var i=1;i<=7;i++){
 document.querySelector(".drum"+i).addEventListener("click",function(){
-  detectkey(this.innerHTML);
-  addstyle(this.innerHTML);
+  detectkey(this.innerHTML);      //here the detectkey function is taking the letter written on the button and playing the audio related to that button.  
+  addstyle(this.innerHTML);       
 });
 }
 
-function detectkey(value){
+function detectkey(value){   
+  //This function takes a parameter value and checks it with various letters (letters on the button), and plays the audio related to the button on which the letter is written
   switch (value) {
     case "w":
       var audio=(new Audio('sounds/crash.mp3'));
