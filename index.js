@@ -47,7 +47,7 @@ function addstyle(keypress){    //This function implements the press feel animat
 
 }
 
-document.addEventListener("keydown",function(pressed){
+document.addEventListener("keydown",function(pressed){    //here we add a keypress event to the whole DOM and trigger the detectkey and addstyle function by keypresses
   detectkey(pressed.key);
   addstyle(pressed.key);
 });
