@@ -41,7 +41,7 @@ function detectkey(value){
   }
 }
 
-function addstyle(keypress){
+function addstyle(keypress){    //This function implements the press feel animation by adding and removing css in after a fixed timeout
   document.querySelector("."+keypress).classList.add("pressed");
   setTimeout(function(){document.querySelector("."+keypress).classList.remove("pressed");},50);
 
